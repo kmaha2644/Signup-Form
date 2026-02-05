@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="signup-box">
+    <div class="header">
+        Signup
+   </div>
+
+   <div class="content">
+
+    <p class="login-text">
+        Already have an account?
+        <a href="login">Login</a>
+    </p>
+    <h4 class="login-head"> Login &#10148;</h4>
+    
+    <div class="logo">
+        <img src="logo/logo.png" alt="NAVTTC Logo">
+    </div>
+
+   <form onsubmit="return validateForm()">
+
+    <label>Username:</label>
+    <input type="text" id="username">
+
+    <label>Password:</label>
+    <input type="password" id="password">
+
+    <label>Confirm Password:</label>
+    <input type="password" id="ConfirmPassword">
+
+    <label>Email Address:</label>
+    <input type="email" id="email">
+
+    <label>First Name:</label>
+    <input type="text" id="fname">
+
+    <label>Last Name:</label>
+    <input type="text" id="lname">
+
+    <div class="terms">
+        <input type="checkbox" id="terms">
+
+        I have read the Terms of Service
+    </div>
+
+    <input type="submit" value="Signup" class="btn">
+
+   </form>
+   </div>
+
+   </div>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
