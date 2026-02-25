@@ -7,58 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-   <div class="signup-box">
+  <div class="signup-box">
     <div class="header">
         Signup
-   </div>
+        <img src="Logo.jpg" alt="logo" class="logo">
+  </div>  
+  <div class="signup-body">
+     <form id="signupForm" action="form.php">
+        <label>Username:</label>
+        <input type="text" id="username">
 
-   <div class="content">
+        <label>Password:</label>
+        <input type="password" id="password">
+        <label>Confirm Password:</label>
+        <input type="password" id="confirmpassword">
 
-    <p class="login-text">
-        Already have an account?
-        <a href="login">Login</a>
-    </p>
-    <h4 class="login-head"> Login &#10148;</h4>
-    
-    <div class="logo">
-        <img src="logo/logo.png" alt="NAVTTC Logo">
-    </div>
+        <label>Email Address:</label>
+         <input type="email" id="email">
 
-   <form onsubmit="return validateForm()">
+         <label>First Name:</label>
+         <input type="text" id="firstName">
+     
+        <label>Last Name:</label>
+         <input type="text" id="lastName">
 
-    <label>Username:</label>
-    <input type="text" id="username">
+         <div class="terms">
+            <input type="checkbox" id="terms">
+            I have read the Terms of service
+         </div>
 
-    <label>Password:</label>
-    <input type="password" id="password">
+         <div class="error" id="errorMsg"></div>
+     </form>
+  </div>
 
-    <label>Confirm Password:</label>
-    <input type="password" id="ConfirmPassword">
-
-    <label>Email Address:</label>
-    <input type="email" id="email">
-
-    <label>First Name:</label>
-    <input type="text" id="fname">
-
-    <label>Last Name:</label>
-    <input type="text" id="lname">
-
-    <div class="terms">
-        <input type="checkbox" id="terms">
-
-        I have read the Terms of Service
-    </div>
-
-    <input type="submit" value="Signup" class="btn">
-
-   </form>
-   </div>
-
-   </div>
-
-   <script src="script.js"></script>
+  <div class="signup-footer">
+      <button
+      onclick="validateForm()">Signup</button>
+  </div>
+  </div>
 
 </body>
 </html>
