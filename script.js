@@ -1,4 +1,4 @@
-document.getElementById("signupForm").addEventListener("submit", function(e){
+    document.getElementById("finalassesment").addEventListener("submit", function(e){
 
     let username = document.querySelector("input[name='username']").value.trim();
     let password = document.querySelector("input[name='password']").value.trim();
