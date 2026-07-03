@@ -27,10 +27,10 @@ body{
 }
 
 .logo{
-    width:100px;
+    width:75px;
     position:absolute;
     right:15px;
-    top:50px;
+    top:60px;
 }
 
 .top-login{
